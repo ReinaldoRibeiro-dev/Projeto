@@ -1,0 +1,43 @@
+header {
+    background-color: mediumaquamarine;
+    padding: 1px;
+    
+}
+
+body {
+    background-color: whitesmoke;
+}
+div{
+    display:inline-block;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+#button1 {
+    cursor: pointer;
+    float: left;   
+}
+
+.button2 {
+    border: none;
+    color: black;
+    font-size: 2vw;
+    cursor: pointer;
+    text-decoration: none; 
+    margin-left: 4vw;
+}
+.button3 {
+    border-radius: 50% 50%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: green;
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 5rem;
+    margin: 0 auto;
+}
