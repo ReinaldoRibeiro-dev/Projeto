@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .loginA { 
+            color: rgb(32, 32, 32);
+            text-align: center;
+            font-size: 40px;
+        }
+        body {
+            background-color: #EFEAE4;
+        }
+        #email {
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        #senha {
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        /*Div responsável pelo menu do login*/
+        .login {
+            background-color: #90EE90;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: white;
+        }
+        #entrar {
+            background-color: rgb(12, 201, 160);
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        #entrar:hover {
+            background-color: lightgreen;
+        }
+        a{
+            color: white;
+        }
+        #LoginB{
+            font-size: 20px;
+            color: #EFEAE4;
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Botões estão na ordem que aparecem-->
+        <div id="cabeçalho">
+          <a href="Main.html"><img src="LogoBuEc.png"id="button1"></a>
+          <input id="pesquisa" placeholder="Pesquisar">
+          <button class="enter"><img src="Lupa.png" id="lupa"></button>
+          <a class="button2" href="Contato.html">Contato</a>
+          <a class="button2" href="Favoritos.html">Minha lista</a>
+          <a class="button2" href="login.html">Login</a>
+          <a class="button2" href="cadastro.html">Cadastre-se</a>
+          </div>
+    </header>
+    <main>
+        <div class="login">
+            <h1 class="loginA">Login</h1>
+            <input type="text" placeholder="E-mail" id="email">
+            <br><br>
+            <input type="password" placeholder="Senha" id="senha">
+            <br><br>
+            <button onclick="autenticar()" id="entrar">Entrar</button>
+            <h2><a href="Cadastro.html" id="LoginB">Não possui cadastro?</a></h2>
+        </div>
+        <div id="msgError" style="display: none; color: red;"></div> <!-- Adicionado o elemento para exibir mensagens de erro -->
+    </main>
+    <script src="scriptlogin.js"></script>
+</body>
+</html>
