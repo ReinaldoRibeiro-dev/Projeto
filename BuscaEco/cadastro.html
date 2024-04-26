@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuscaEco</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header> <!--Botões estão na ordem que aparecem-->
+      <div id="cabeçalho">
+        <a href="Main.html"><img src="LogoBuEc.png"id="button1"></a>
+        <input id="pesquisa" placeholder="Pesquisar">
+        <button class="enter"><img src="Lupa.png" id="lupa"></button>
+        <a class="button2" href="login.html">Login</a>
+        <a class="button2" href="cadastro.html">Cadastre-se</a>
+        <button id="themeChange">Theme</button>
+        </div>
+        <br><br><br><br><br>
+
+    </header>
+    <main>
+        <div class="cadastro">
+            <h1 class="loginA">Cadastro</h1>
+            <input type="text" placeholder="E-mail" id="email">
+            <br><br>
+            <input type="password" placeholder="Senha" id="senha">
+            <br><br>
+            <input type="password" placeholder="Confirmar Senha" id="confirmSenha">
+            <br><br>
+            <button onclick="cadastrar()" id="entrar">Enviar</button>
+        </div>
+        <div id="msgError" style="display: none; color: red;"></div>
+        <div id="msgSuccess" style="display: none; color: green;"></div>
+    
+        <script src="scriptcadastro.js">
+        </script>
+    </main>
+    <BR>
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-section">
+                <h3 style="margin-left: 0; ">O buscaEco</h3>
+                <ul>
+                    <li><a href="#">Área do anunciante</a></li>
+                    <li><a href="#">Trabalhe com a gente</a></li>
+                    <li><a href="#">Ética e Integridade</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+            </div>
+            <div class="footer-section">
+                <h3 style="color: white; text-align: center; font-size: 1vw;">Precisa de ajuda?</h3>
+                <div class="button">
+                    <p><a href="FAQ.html" style="color: black;">Veja o FAQ</a></p>
+                </div>
+            </div>
+        </div>
+    <div class="icons">
+        <img src="ic Facebook.png" alt="Facebook">
+        <img src="ic Instagram.png" alt="Instagram">
+        <img src="ic Twitter.png" alt="Twitter">
+        <img src="ic Youtube.png" alt="Youtube">
+        <p style="margin-left: 10%; color: white; font-size: 1vw;">O uso deste site está sujeito aos termos e condições do Termo de Uso e Política de privacidade.<br>
+            © BuscaEco. Todos os direitos reservados.</p>
+    </div>
+    
+    </footer>
+    <script>
+        const themeChange = document.getElementById("themeChange");
+const body = document.querySelector("body");
+const imagemBotaoTrocaDeTema = document.querySelector(".imagem-botao");
+
+themeChange.addEventListener("click", () => {
+  const modoEscuroEstaAtivo = body.classList.contains("modo-escuro");
+  body.classList.toggle("modo-escuro");
+  if(modoEscuroEstaAtivo){
+    imagemBotaoTrocaDeTema.setAttribute()
+  }
+    else{
+        imagemBotaoTrocaDeTema.setAttribute()
+    }
+});
+    </script>
+</body>
+</html>
